@@ -35,19 +35,6 @@ var server = http.createServer(function(request, response) {
 			'</html>');
 			};
 		} 
-		else if (page == '/infos') {
-			response.writeHead(200, {"Content-Type": "text/html"});
-			response.write('<!DOCTYPE html>'+
-		'<html>'+
-		'	<head>'+
-		'		<meta charset="utf-8" />'+
-		'		<title>Page infos</title>'+
-		'	</head>'+
-		'	<body>'+
-		'		<p>Tu est sur la page infos</p>'+
-		'	</body>'+
-		'</html>');
-		} 
 		else {
 			response.writeHead(404, {"Content-Type": "text/html"});
 			response.write('<!DOCTYPE html>'+
